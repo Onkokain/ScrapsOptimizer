@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { 
+      width: 200px;
+      padding: 20px;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: #e8e8e8;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    ::selection {
+      background: transparent;
+    }
+    h1 {
+      margin: 0 0 15px 0;
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+      background: linear-gradient(135deg, #6b9bd1 0%, #4a7ba7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+    button {
+      padding: 12px;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      color: #e8e8e8;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    button:hover {
+      background: #252525;
+      border-color: #6b9bd1;
+    }
+    button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+  <h1>Scraps Optimizer</h1>
+  <button id="themeToggle">🌙 Dark Mode</button>
+  <button id="popOut">↗ Pop Out</button>
+  <script src="popup.js"></script>
+</body>
+</html>
